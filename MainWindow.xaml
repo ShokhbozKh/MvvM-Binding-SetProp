@@ -1,0 +1,49 @@
+﻿<Window
+    x:Class="MvvM.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:MvvM"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Grid>
+        <TextBlock
+            Height="60"
+            Margin="369,47,326,0"
+            VerticalAlignment="Top"
+            FontSize="40"
+            Text="{Binding Counter}" />
+        <Button
+            Width="90"
+            Height="60"
+            Margin="299,155,411,219"
+            Command="{Binding Plus}"
+            Content="Increment" />
+        <Button
+            Width="90"
+            Height="60"
+            Margin="449,158,261,216"
+            Command="{Binding Minus10}"
+            Content="Dectiment 10" />
+
+        <Button
+            Width="90"
+            Height="60"
+            Margin="301,253,409,121"
+            Command="{Binding Plus10}"
+            Content="Increment 10" />
+        <Button
+            Width="90"
+            Height="60"
+            Margin="447,256,263,118"
+            Command="{Binding Minus}"
+            Content="Dectiment" />
+
+
+
+    </Grid>
+</Window>
